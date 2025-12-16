@@ -1,9 +1,5 @@
 # Koa-Chatbot
-Designed and implemented Koa, a machine-learning chat assistant with a FastAPI backend, custom JSON system prompts, and a responsive light/dark-mode web UI featuring profile controls and voice input, built for fast, streaming conversational responses and web deployment.
-
-
-
-Koa is a lightweight machine-learning chat assistant with a FastAPI backend and a responsive web UI (light/dark mode) featuring profile controls and voice input. It is built for fast, streaming conversational responses and straightforward web deployment.
+Designed and implemented Koa, a machine-learning chat assistant featuring a FastAPI inference backend, configurable JSON-based system prompts, and a responsive light/dark-mode web UI with profile controls and voice input, delivering fast, streaming-style conversational responses and a clean path to web deployment.
 
 ## Features
 - FastAPI inference server with a simple chat API
@@ -19,15 +15,10 @@ Koa is a lightweight machine-learning chat assistant with a FastAPI backend and 
 - `requirements.txt` — Python dependencies
 
 ## Demo
-Add your demo video here:
 
-> **Demo video:** (upload a short MP4 to the repo or link it)
-- Option A (recommended): Upload a GIF preview to `assets/demo.gif` and embed it:
-  - `![Koa demo](assets/demo.gif)`
-- Option B: Upload an MP4 and link it:
-  - `[Watch the demo video](assets/koa-demo.mp4)`
-- Option C: Link YouTube / Google Drive:
-  - `[Watch the demo video](PASTE_LINK_HERE)`
+
+YouTube Link:
+  - `[Watch the demo video]([PASTE_LINK_HERE](https://youtu.be/QX3a01UH3ik))`
 
 ## Quick Start (Local)
 ### 1) Backend (FastAPI)
