@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koa - Your AI Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="theme-dark">
+    <div class="app-container">
+        <header class="chat-header">
+            <div class="header-left">
+                <h1>Koa</h1>
+                <p class="subtitle">Your personal AI assistant</p>
+            </div>
+            <div class="header-right">
+                <button id="theme-toggle" class="theme-toggle" title="Toggle Theme">
+                    🌙
+                </button>
+                <div class="profile-container">
+                    <button id="profile-btn" class="profile-btn" aria-haspopup="true" aria-expanded="false">
+                        <div class="avatar">KJ</div>
+                        <div class="profile-info">
+                            <span class="profile-name">Koko Jamgotchian</span>
+                            <span class="profile-handle">@kokoc30</span>
+                        </div>
+                    </button>
+
+                    <!-- Main Dropdown -->
+                    <div id="dropdown-menu" class="dropdown-menu" role="menu">
+                        <button class="dropdown-item" role="menuitem">
+                            <span class="item-icon">👤</span> Personalization
+                        </button>
+                        <button class="dropdown-item" role="menuitem">
+                            <span class="item-icon">⚙️</span> Settings
+                        </button>
+
+                        <div class="dropdown-item-wrapper">
+                            <button id="help-item" class="dropdown-item has-submenu" role="menuitem"
+                                aria-haspopup="true" aria-expanded="false">
+                                <span class="item-content">
+                                    <span class="item-icon">❓</span> Help
+                                </span>
+                                <span class="chevron">›</span>
+                            </button>
+
+                            <!-- Help Fly-out Submenu -->
+                            <div id="help-submenu" class="dropdown-submenu" role="menu">
+                                <button class="dropdown-item" role="menuitem">
+                                    <span class="item-icon">ℹ️</span> Help center
+                                </button>
+                                <button class="dropdown-item" role="menuitem">
+                                    <span class="item-icon">📝</span> Release notes
+                                </button>
+                                <button class="dropdown-item" role="menuitem">
+                                    <span class="item-icon">📜</span> Terms & policies
+                                </button>
+                                <button class="dropdown-item" role="menuitem">
+                                    <span class="item-icon">🐛</span> Report Bug
+                                </button>
+                                <button class="dropdown-item" role="menuitem">
+                                    <span class="item-icon">⌨️</span> Keyboard shortcuts
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="dropdown-divider"></div>
+                        <button class="dropdown-item danger" role="menuitem">
+                            <span class="item-icon">🚪</span> Log out
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="chat-area" id="chat-area">
+            <!-- Messages will be inserted here -->
+            <div class="welcome-message">
+                <p>Hello! I'm Koa. How can I help you today?</p>
+            </div>
+        </main>
+
+        <div class="error-banner hidden" id="error-banner">
+            Could not reach Koa. Please try again.
+        </div>
+
+        <footer class="input-area">
+            <div class="input-wrapper">
+                <textarea id="message-input" placeholder="Type a message..." rows="1"></textarea>
+                <div class="action-buttons">
+                    <button id="mic-btn" class="icon-btn" title="Voice Input">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+                            <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                            <line x1="12" y1="19" x2="12" y2="23"></line>
+                            <line x1="8" y1="23" x2="16" y2="23"></line>
+                        </svg>
+                    </button>
+                    <button id="send-btn" class="send-btn">
+                        Send
+                    </button>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
